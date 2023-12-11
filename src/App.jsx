@@ -1,11 +1,12 @@
-import { Container} from "@chakra-ui/react";
 import AnimeListComponent from "./components/ListAnime";
+import { Link, Route, Routes } from "react-router-dom";
+
 function App() {
   return (
     <>
-      <Container>
-        <AnimeListComponent></AnimeListComponent>
-      </Container>
+      <Link to="/">Home</Link>
+      <Link to="/products">Products</Link>
+      <AnimeListComponent></AnimeListComponent>
     </>
   );
 }
